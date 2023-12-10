@@ -18,14 +18,15 @@ header {
 	width: 100%;
 	font-size: 36px;
 	letter-spacing: 4px;
-	background-color: #c77224;
-	color: #942b04;
+	background-color: #cef8c488;
+	color: #4b5333;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 	padding: 10px 20px;
 }
 
 .content {
 	background-color: #ecd7a7;
+	background-image: url("./Assets/abstractbg.jpg");
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -40,11 +41,14 @@ header {
 	align-items: center;
 	justify-content: center;
 	margin: 20px;
-	padding: 20px;
-	width: 60%;
+	padding: 100px 20px;
+	width: 50%;
 	font-size: 44px;
 	text-align: center;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	color: #184d19;
+	background-color: #cef8c488;
 }
 
 button {
@@ -58,14 +62,14 @@ button {
 	cursor: pointer;
 	border: none;
 	border-radius: 5px;
-	background-color: #942b04;
-	color: #b8a896;
+	background-color: #184d19;
+	color: #ffffff;
 	font-family: "Lobster", cursive;
 }
 
 button:disabled {
-	background-color: #462c14;
-	color: #ecd7a7;
+	background-color: #030a03;
+	color: #beaa7b;
 }
 
 @media (max-width: 768px) {

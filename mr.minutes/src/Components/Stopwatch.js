@@ -2,23 +2,28 @@ import React, { useState, useEffect } from "react";
 
 const Stopwatch = () => {
 	const [isRunning, setIsRunning] = useState(false);
+	const [startTime, setStartTime] = useState(0);
 	const [elapsedTime, setElapsedTime] = useState(0);
 
 	useEffect(() => {
-		let interval;
+		let animationFrameId;
+
+		const updateElapsedTime = () => {
+			setElapsedTime(performance.now() - startTime);
+			animationFrameId = requestAnimationFrame(updateElapsedTime);
+		};
 
 		if (isRunning) {
-			interval = setInterval(() => {
-				setElapsedTime((prevElapsedTime) => prevElapsedTime + 10); // Update every 10 milliseconds
-			}, 10);
+			setStartTime(performance.now());
+			updateElapsedTime();
 		} else {
-			clearInterval(interval);
+			cancelAnimationFrame(animationFrameId);
 		}
 
 		return () => {
-			clearInterval(interval);
+			cancelAnimationFrame(animationFrameId);
 		};
-	}, [isRunning]);
+	}, [isRunning, startTime]);
 
 	const startStopwatch = () => {
 		setIsRunning(true);
@@ -34,8 +39,8 @@ const Stopwatch = () => {
 	};
 
 	const formatTime = (time) => {
-		const milliseconds = time % 1000;
-		const seconds = Math.floor((time / 1000) % 60);
+		const milliseconds = Math.floor(time) % 1000;
+		const seconds = Math.floor(time / 1000) % 60;
 		const minutes = Math.floor(time / (60 * 1000));
 
 		return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(
