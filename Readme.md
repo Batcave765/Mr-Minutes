@@ -39,3 +39,5 @@ Welcome to Mr. Minutes, a simple and versatile web application that provides a s
 If you encounter any issues or have suggestions for improvement, please [create an issue](https://github.com/Batcave765/mr-minutes/issues).
 
 Happy timekeeping with Mr. Minutes! 🕒
+
+[Mr. Minutes](https://batcave765.github.io/mr-minutes/)
