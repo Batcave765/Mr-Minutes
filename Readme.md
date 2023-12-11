@@ -40,4 +40,4 @@ If you encounter any issues or have suggestions for improvement, please [create 
 
 Happy timekeeping with Mr. Minutes! 🕒
 
-![Stopwatch](https://raw.githubusercontent.com/Batcave765/Mr-Minutes/master/StopwatchSS.png?token=GHSAT0AAAAAACLNLIUHKMFO6XZ3GJF33LYAZLV7WWA)
+[Mr. Minutes](https://raw.githubusercontent.com/Batcave765/Mr-Minutes/master/StopwatchSS.png?token=GHSAT0AAAAAACLNLIUHKMFO6XZ3GJF33LYAZLV7WWA)
