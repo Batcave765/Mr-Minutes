@@ -11,20 +11,6 @@ body {
 	margin: 0; /* Reset default margin */
 }
 
-header {
-	font-family: "Bangers", cursive;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	font-size: 36px;
-	letter-spacing: 2px; /* Adjusted letter-spacing for smaller screens */
-	background-color: #cef8c488;
-	color: #4b5333;
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-	padding: 10px 20px;
-}
-
 .content {
 	background-color: #ecd7a7;
 	background-image: url("./Assets/abstractbg.jpg");
