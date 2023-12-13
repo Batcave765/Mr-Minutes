@@ -1,0 +1,77 @@
+/* Header styles */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 36px;
+	letter-spacing: 2px;
+	background-color: #cef8c488;
+	color: #4b5333;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Logo styles */
+h1 {
+	margin: 0;
+}
+
+/* Navigation links styles */
+.links {
+	position: relative;
+	right: 0;
+	display: flex;
+	padding: 1%;
+}
+
+h3 {
+	margin: 0 10px;
+}
+
+/* Responsive styles using media queries */
+@media (max-width: 1200px) {
+	header {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 992px) {
+	header {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	header {
+		flex-direction: row;
+		align-items: flex-start;
+		font-size: 20px;
+		padding: 5px;
+	}
+
+	.links {
+		margin-top: 10px;
+	}
+
+	h3 {
+		margin: 5px 5px;
+	}
+}
+
+@media (max-width: 576px) {
+	header {
+		flex-direction: row;
+		align-items: center;
+		font-size: 16px;
+		padding: 5px;
+	}
+	.links {
+		left: 0;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+}
