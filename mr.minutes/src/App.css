@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Lobster", cursive;
 }
 
 body {
@@ -19,7 +20,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	font-family: "Lobster", cursive;
 }
 
 .inner {
@@ -36,6 +36,20 @@ body {
 	border-radius: 20px;
 	color: #184d19;
 	background-color: #cef8c488;
+}
+
+.timenow {
+	background-color: #ecd7a7;
+	background-image: url("./Assets/abstractbg.jpg");
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-family: "Lobster", cursive;
+	color: #184d19;
+	font-size: 100px;
+	text-align: center;
 }
 
 button {
