@@ -3,7 +3,9 @@ import Clock from "react-live-clock";
 const TimeNow = () => {
 	return (
 		<div className="timenow">
-			<Clock format={"h:mm:ssa"} ticking={true} />
+			<h1 style={{ fontSize: "20vw" }}>
+				<Clock format={"h:mm:ssa"} ticking={true} />
+			</h1>
 			<Clock format={"dddd, MMMM Mo, YYYY"} />
 		</div>
 	);

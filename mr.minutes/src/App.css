@@ -52,6 +52,23 @@ body {
 	text-align: center;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input {
+	all: unset;
+	width: 20%;
+	font-family: "Lobster", cursive;
+	font-size: 32px;
+	text-align: center;
+	border: none;
+	background-color: #00000000;
+	border-bottom: 2px solid #184d19;
+}
+
 button {
 	display: inline-block;
 	padding: 15px 30px; /* Adjusted padding for smaller screens */
@@ -73,6 +90,13 @@ button:disabled {
 	color: #beaa7b;
 }
 
+.custom-timer-buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
 @media (max-width: 768px) {
 	.inner {
 		width: 90%;
@@ -81,6 +105,11 @@ button:disabled {
 
 	button {
 		font-size: 24px;
+	}
+	.custom-timer-buttons {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
 	}
 }
 
@@ -97,5 +126,10 @@ button:disabled {
 		padding: 10px 20px;
 		margin: 10px 10px;
 		font-size: 18px;
+	}
+	.custom-timer-buttons {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 }
