@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Header from "./Header";
 
 const Stopwatch = () => {
 	const [isRunning, setIsRunning] = useState(false);
@@ -50,21 +51,24 @@ const Stopwatch = () => {
 	};
 
 	return (
-		<div className="content">
-			<div className="inner">
-				<h1>Stopwatch</h1>
-				<div>
-					<p>{formatTime(elapsedTime)}</p>
-					<button onClick={startStopwatch} disabled={isRunning}>
-						Start
-					</button>
-					<button onClick={stopStopwatch} disabled={!isRunning}>
-						Stop
-					</button>
-					<button onClick={resetStopwatch}>Reset</button>
+		<>
+			<Header />
+			<div className="content">
+				<div className="inner">
+					<h1>Stopwatch</h1>
+					<div>
+						<p>{formatTime(elapsedTime)}</p>
+						<button onClick={startStopwatch} disabled={isRunning}>
+							Start
+						</button>
+						<button onClick={stopStopwatch} disabled={!isRunning}>
+							Stop
+						</button>
+						<button onClick={resetStopwatch}>Reset</button>
+					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 

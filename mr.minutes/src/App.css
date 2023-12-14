@@ -71,7 +71,7 @@ input {
 
 button {
 	display: inline-block;
-	padding: 15px 30px; /* Adjusted padding for smaller screens */
+	padding: 10px 30px; /* Adjusted padding for smaller screens */
 	margin: 20px 10px; /* Adjusted margin for smaller screens */
 	font-size: 18px;
 	font-weight: bold;
@@ -97,6 +97,11 @@ button:disabled {
 	justify-content: center;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 @media (max-width: 768px) {
 	.inner {
 		width: 90%;
@@ -104,7 +109,9 @@ button:disabled {
 	}
 
 	button {
-		font-size: 24px;
+		padding: 7px 20px;
+		margin: 5px 10px;
+		font-size: 20px;
 	}
 	.custom-timer-buttons {
 		flex-direction: column;
