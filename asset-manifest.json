@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Mr-Minutes/static/css/main.7b24823c.css",
+    "main.js": "/Mr-Minutes/static/js/main.b8832cf1.js",
+    "static/js/787.ea6a40bb.chunk.js": "/Mr-Minutes/static/js/787.ea6a40bb.chunk.js",
+    "static/media/alarm.mp3": "/Mr-Minutes/static/media/alarm.bff5ff28a2d5e105c160.mp3",
+    "static/media/abstractbg.jpg": "/Mr-Minutes/static/media/abstractbg.5e4535a227d6d3d6eed6.jpg",
+    "index.html": "/Mr-Minutes/index.html",
+    "main.7b24823c.css.map": "/Mr-Minutes/static/css/main.7b24823c.css.map",
+    "main.b8832cf1.js.map": "/Mr-Minutes/static/js/main.b8832cf1.js.map",
+    "787.ea6a40bb.chunk.js.map": "/Mr-Minutes/static/js/787.ea6a40bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b24823c.css",
+    "static/js/main.b8832cf1.js"
+  ]
+}
