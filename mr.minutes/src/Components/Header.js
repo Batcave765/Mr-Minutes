@@ -9,21 +9,23 @@ const Header = () => {
 				<h1>Mr. Minutes</h1>
 			</div>
 			<div className="links">
-				<button>
-					<Link to="/">
+				<Link to="/">
+					<button>
 						<h3>Clock</h3>
-					</Link>
-				</button>
-				<button>
-					<Link to="/timer">
+					</button>
+				</Link>
+
+				<Link to="/timer">
+					<button>
 						<h3>Timer</h3>
-					</Link>
-				</button>
-				<button>
-					<Link to="/stopwatch">
+					</button>
+				</Link>
+
+				<Link to="/stopwatch">
+					<button>
 						<h3>Stopwatch</h3>
-					</Link>
-				</button>
+					</button>
+				</Link>
 			</div>
 		</header>
 	);

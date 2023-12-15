@@ -15,7 +15,7 @@ const Stopwatch = () => {
 		};
 
 		if (isRunning) {
-			setStartTime(performance.now());
+			// setStartTime(performance.now());
 			updateElapsedTime();
 		} else {
 			cancelAnimationFrame(animationFrameId);
@@ -24,10 +24,11 @@ const Stopwatch = () => {
 		return () => {
 			cancelAnimationFrame(animationFrameId);
 		};
-	}, [isRunning, startTime]);
+	}, [isRunning]);
 
 	const startStopwatch = () => {
 		setIsRunning(true);
+		setStartTime(performance.now());
 	};
 
 	const stopStopwatch = () => {
